@@ -21,6 +21,10 @@ div {
 
 }
 
+# regular {
+    border-radius: 100%
+}
+
 div header {
     color: aquamarine
     background-color: yellowgreen;
@@ -31,5 +35,5 @@ main {
 }
 
 li {
-
+    font-size: 26px;
 }
