@@ -16,9 +16,11 @@ li.a{
 }
 
 .aboutimg {
+    display: block;
+    margin: auto;
     text-align: center;
     width: 50%;
-    margin: auto;
+    float: center;
 }
 
 .header {
