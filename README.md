@@ -1,12 +1,8 @@
-# html-me-something
-For Launchcode
+# Design a website for a city in Miami
 
-My first small project for Launchcode Bootcamp. Scope is simply learn git commands and write some html. 
-
-#|Design a single page application that use Javascript ids to navigate the page|
-
-It is now 2022 and this is my first rewrite of a Website from Github it is 2022.
-
+### geography, demographics, economics, famous people and highlights
+| 1922 - 1955 | 1955 - 1988 | 1988 - 2022 |
+| ----------- |:-----------:| -----------:|
 
 
 
