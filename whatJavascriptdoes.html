@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ECMAscript W3 schools 04/01/2022</h1>
+    <!-- Here is where the button is created and actions defined and passed to the HTNL ID-->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click here the current date and time will show.
+    </button>
+    <!-- Below is ID where the dynamic Javascript will show-->
+    <p id="demo"></p>
+    <h2>Exercise:</h2>
+
+    <p>Create a variable called <b>carName</b> and assign the value <strong>Volvo</strong> strong to it.</p>
+    <form>
+        <!--carname-->
+        <label> var =</label>
+        <input type="text" id="text" name="text" value="type variable name">
+        <!--StringValue -->
+        <label> = "</label>
+        <input type="text" id="text" name="text" value="type string name">
+        ";
+    </form>
+
+    <h3>What can Javascript do?</h3>
+
+    <p id="demo2">Javascript can change HTML content</p>
+
+    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
+        Click me!</button>
+    <p id="demo3"> JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click to enlarge font.
+    </button>
+    <br>
+
+    <p id="demo4"> JavaScript can hide HTML elements</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display = 'none'">Click to hide above title
+    </button>
+    <p id="demo5" style="display:none">JavaScript can show hidden elements too!</p>
+
+    <button type="button" onclick="document.getElementById('demo5').style.display='block'">Click to show above
+        title</button>
+
+    <h3 id="demo6"></h3>
+    <script>
+        //Javascript code is inserted here
+        document.getElementById( "demo6" ).innerHTML =
+            "This title Inserted via ID from 'script' tag";
+    </script>
+</body>
+
+</html>
