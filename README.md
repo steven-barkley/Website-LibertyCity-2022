@@ -1,6 +1,4 @@
-# Design a website for a community in Miami
-
-# Liberty City 33147 
+# Design a website for the Model City community (Miami, FL) 
 
 # Design Document --link here--
 
