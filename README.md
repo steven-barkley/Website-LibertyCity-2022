@@ -1,8 +1,7 @@
-# Design a website for a city in Miami
+# Design a website for a community in Miami
 
-### geography, demographics, economics, famous people and highlights
-| Timeline | 1922 - 1955 | 1955 - 1988 | 1988 - 2022 |
-| ---------| :---------: |:-----------:| -----------:|
+#Liberty City 33147 
 
+#Design Document --link here--
 
-# Adding REACT TO WEBSITE
+#Technologies HTML CSS JAVASCRIPT REACT
