@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="W3learn.css">
+    <!--Declare document object outside the function-->
 
-    <script>
-        function myFunction() {
-            document.getElementById( "demo7" ).innerHTML = "Javascript W3 schools 04/01/2022";
-        }
-    </script>
+    <!--Declaring the Document Object Model globally will reduce number of accesses
+               therefore speed up the page-->
+
 </head>
 
 <body>
-    <h1 id="demo7">ECMAscript W3 schools 04/01/2022</h1>
+    <h1 style="font-size: 55px;">W3schools learn HTML, CSS and Javascript</h1>
+    <h2 id="demo7">ECMAscript W3 schools 04/01/2022</h2>
     <button type="button" onClick="myFunction()">
         Click to change the above title.
     </button>
     <!-- Here is where the button is created and actions defined and passed to the HTNL ID-->
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    <button type="button" onclick="pageSubheader.innerHTML = Date()">
         Click here the current date and time will show.
     </button>
     <!-- Below is ID where the dynamic Javascript will show-->
@@ -80,12 +80,17 @@
     </script>
 
     <script>
+        const pageTitle = document.getElementById( "demo7" )
+        const pageSubheader = document.getElementById( 'demo' )
+
+        function myFunction() {
+            pageTitle.innerHTML = "Javascript W3 schools 04/01/2022";
+        }
         function myFlag() {
             document.getElementById( "flag" ).innerHTML = "Test"
         }
     </script>
 
-    <h1 style="font-size: 55px;">W3schools learn CSS</h1>
 
     <p id="test">Start with X</p>
 
