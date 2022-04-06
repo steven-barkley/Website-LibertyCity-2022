@@ -99,6 +99,29 @@
             'Boolean equates to true or false'" type="button">
         Math Boolean </button>
 
+    <h2>JavaScript Booleans</h2>
+    <p id="boole"></p>
+
+    <script>
+        document.getElementById( "boole" ).innerHTML =
+            "100 is " + Boolean( 100 ) + "<br>" +
+            "3.14 is equal to Math.PI " + Boolean( 3.14 == Math.PI ) + "<br>" +
+            "-15 is greater than 4 " + Boolean( -15 > 4 ) + "<br>" +
+            "Any (not empty) string is " + Boolean( "Hello" > "Goodbye" ) + "<br>" +
+            "Even the string 'false' is " + Boolean( 'false' ) + "<br>" +
+            "Any expression (except zero) is " + Boolean( 1 + 7 + 3.14 );
+    </script>
+
+    <h2>JavaScript Math.PI</h2>
+
+    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById( "demo" ).innerHTML = Math.PI;
+    </script>
+
 </body>
 
 </html>
