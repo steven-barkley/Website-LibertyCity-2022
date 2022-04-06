@@ -116,12 +116,30 @@
 
     <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
 
-    <p id="demo"></p>
+    <p id="demoPI"></p>
 
     <script>
-        document.getElementById( "demo" ).innerHTML = Math.PI;
+        document.getElementById( "demoPI" ).innerHTML = Math.PI;
     </script>
 
+
+    <h2>JavaScript Math.sqrt</h2>
+    <pre>
+        The square root of 81 is ??
+    </pre>
+
+    <pre id="squareRootOfNine">
+
+    </pre>
+    <script>
+        document.getElementById( "squareRootOfNine" ).innerHTML = Math.sqrt( 81 );
+    </script>
+    <h1 id="heading" style="color:blue"></h1>
+    <h2 id="date" style="text-align:center"></h2>
+    <script>
+        document.getElementById( "heading" ).innerHTML = "Today's Date is"
+        document.getElementById( "date" ).innerHTML = ": " + new Date();
+    </script>
 </body>
 
 </html>
