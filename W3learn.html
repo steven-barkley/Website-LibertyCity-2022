@@ -11,24 +11,26 @@
 
     <!--Declaring the Document Object Model globally will reduce number of accesses
                therefore speed up the page-->
-
 </head>
 
 <body>
     <h1 style="font-size: 55px;">W3schools learn HTML, CSS and Javascript</h1>
     <h2 id="demo7">ECMAscript W3 schools 04/01/2022</h2>
-    <button type="button" onClick="myFunction()">
-        Click to change the above title.
-    </button>
+    <div class="center">
+        <button type="button" onClick="myFunction()">
+            Click to change the above title.
+        </button>
+    </div>
     <!-- Here is where the button is created and actions defined and passed to the HTNL ID-->
-    <button type="button" onclick="pageSubheader.innerHTML = Date()">
-        Click here the current date and time will show.
-    </button>
+    <div class="center">
+        <button type="button" onclick="pageSubheader.innerHTML = Date()">
+            Click here the current date and time will show.
+        </button>
+    </div>
     <!-- Below is ID where the dynamic Javascript will show-->
     <p id="demo"></p>
     <h2>Exercise:</h2>
-
-    <p>Create a variable called <b>carName</b> and assign the value <strong>Volvo</strong> strong to it.</p>
+    <p>Create a variable called <b>carName</b> and assign the value <strong>Volvo</strong> to it.</p>
     <form>
         <!--carname-->
         <label> var =</label>
@@ -38,48 +40,78 @@
         <input type="text" id="text" name="text" value="type string name">
         ";
     </form>
-
-    <h3>What can Javascript do?</h3>
-
+    <h2>What can Javascript do?</h2>
     <p id="demo2">Javascript can change HTML content</p>
-
-    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
-        Click me!</button>
+    <div class="center">
+        <button type="button" onclick='document.getElementById("demo2").innerHTML = "Javascript is Dynamic!"'>
+            Click me!</button>
+    </div>
     <p id="demo3"> JavaScript can change the style of an HTML element.</p>
-
-    <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click to enlarge font.
-    </button>
+    <div class="center">
+        <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click to enlarge font to
+            35
+            pixels.
+        </button>
+    </div>
     <br>
-
     <p id="demo4"> JavaScript can hide HTML elements</p>
-    <button type="button" onclick="document.getElementById('demo4').style.display = 'none'">Click to hide above
-        title
-    </button>
-    <p id="demo5" style="display:none">JavaScript can show hidden elements too!</p>
+    <div class="center">
 
-    <button type="button" onclick="document.getElementById('demo5').style.display='block'">Click to show above
-        title</button>
+        <button type="button" onclick="document.getElementById('demo4').style.display = 'none'">Click to hide above
+            title
+        </button>
+    </div>
+    <p id="demo5" style="display:none">JavaScript can show hidden elements too!</p>
+    <div class="center">
+        <button type="button" onclick="document.getElementById('demo5').style.display='block'">Click to show above
+            title</button>
+    </div>
 
     <h3 id="demo6"></h3>
-    <button onclick="myScript()">Reveal tip</button>
-    <div id="flag">Best</div>
-    <button onclick="myFlag()">Click to change from <strong><q>Best</q>to <q>Test</q></strong></button>
+    <div class="center">
+        <button onclick="myScript()">Reveal tip</button>
+    </div>
+    <div id="flag">Use functions to represent your creativity.
+    </div>
+    <div class="center">
+        <button onclick="myFlag()">Click to change from <strong><q>The above sentence</q>to <q>Or to develop your
+                    algorithmic solution</q></strong></button>
+    </div>
+    <p id="tip"></p>
+    <!-- Be sure to place the id or class before the script executes-->
+    <p id="test">Start with X</p>
+    <div class="center">
+        <button onclick="getElementById('test').innerHTML = 'End with Z'" type="button">
+            Press to Update
+        </button>
+    </div>
+    <p class='Math'>Test</p>
+    <div class="center">
+        <button onclick="getElementsByClassNames('Math').innerHTML =
+            'Boolean equates to true or false'" type="button">
+            Math Boolean
+        </button>
+    </div>
+    <h2>JavaScript Booleans</h2>
+    <p id="boole"></p>
+    <h2>JavaScript Math.PI</h2>
+    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+    <p id="demoPI"></p>
+    <h2>JavaScript Math.sqrt</h2>
+    <p>The square root of 81 is ??</p>
+    <p id="squareRootOfNine"></p>
+    <h1 id="heading" style="color:blue"></h1>
+    <h2 id="date" style="text-align:center"></h2>
+
     <script>
         //Javascript code is inserted here
         document.getElementById( "demo6" ).innerHTML =
             "This title Inserted via ID from 'script' tag";
-    </script>
-    <p id="tip"></p>
-    <!-- Be sure to place the id or class before the script executes-->
-    <script>
         function myScript() {
 
             document.getElementById( "tip" ).innerHTML =
                 "Placing script tags in the body improves display speed";
         }
-    </script>
-
-    <script>
         const pageTitle = document.getElementById( "demo7" )
         const pageSubheader = document.getElementById( 'demo' )
 
@@ -89,25 +121,6 @@
         function myFlag() {
             document.getElementById( "flag" ).innerHTML = "Test"
         }
-    </script>
-
-
-    <p id="test">Start with X</p>
-
-    <button onclick="getElementById('test').innerHTML = 'End with Z'" type="button">
-        Press to Update</button>
-
-    <p class='Math'>
-        Test
-    </p>
-    <button onclick="getElementsByClassNames('Math').innerHTML =
-            'Boolean equates to true or false'" type="button">
-        Math Boolean </button>
-
-    <h2>JavaScript Booleans</h2>
-    <p id="boole"></p>
-
-    <script>
         document.getElementById( "boole" ).innerHTML =
             "100 is " + Boolean( 100 ) + "<br>" +
             "3.14 is equal to Math.PI " + Boolean( 3.14 == Math.PI ) + "<br>" +
@@ -115,35 +128,11 @@
             "Any (not empty) string is " + Boolean( "Hello" > "Goodbye" ) + "<br>" +
             "Even the string 'false' is " + Boolean( 'false' ) + "<br>" +
             "Any expression (except zero) is " + Boolean( 1 + 7 + 3.14 );
-    </script>
-
-    <h2>JavaScript Math.PI</h2>
-
-    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
-
-    <p id="demoPI"></p>
-
-    <script>
-        document.getElementById( "demoPI" ).innerHTML = Math.PI;
-    </script>
-
-
-    <h2>JavaScript Math.sqrt</h2>
-    <pre>
-        The square root of 81 is ??
-    </pre>
-
-    <pre id="squareRootOfNine">
-
-    </pre>
-    <script>
-        document.getElementById( "squareRootOfNine" ).innerHTML = Math.sqrt( 81 );
-    </script>
-    <h1 id="heading" style="color:blue"></h1>
-    <h2 id="date" style="text-align:center"></h2>
-    <script>
         document.getElementById( "heading" ).innerHTML = "Today's Date is"
         document.getElementById( "date" ).innerHTML = ": " + new Date();
+        document.getElementById( "squareRootOfNine" ).innerHTML = Math.sqrt( 81 );
+        document.getElementById( "demoPI" ).innerHTML = Math.PI;
+        document.getElementsByTagName( "button" )[ 0 ].addEventListener( "mouseover", myUpdate().innerHTML ) = "End with Y";      
     </script>
 </body>
 
