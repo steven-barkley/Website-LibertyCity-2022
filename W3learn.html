@@ -90,22 +90,23 @@
     <p id="squareRootOfNine"></p>
     <h1 id="heading" style="color:blue"></h1>
     <h2 id="date" style="text-align:center"></h2>
-
     <h2>JavaScript Manual Iteration</h2>
-    <h2>JavaScript Automatic Iteration</h2>
-
+    <pre>The code below produces the same result</pre>
     <p id="demoLoop"></p>
 
     <code>
-            const cars = [ "BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi" ];
+            const cars = [ "BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi" ];<br>
 
-            text += cars[ 0 ] + "<br>";
+                text += cars[ 0 ] + "<br>";
                 text += cars[ 1 ] + "<br>";
                 text += cars[ 2 ] + "<br>";
                 text += cars[ 3 ] + "<br>";
                 text += cars[ 4 ] + "<br>";
                 text += cars[ 5 ] + "<br>";
         </code>
+    <hr>
+    <h2>JavaScript Automatic Iteration</h2>
+    <pre>The <strong>"for"</strong> method produces the same result via iteration</pre>
     <code>
             let text = "";
             for ( let i = 0; i < cars.length; i++ ) {
@@ -114,7 +115,7 @@
 
             document.getElementById( "demo" ).innerHTML = text;
       </code>
-
+    <hr>
 
     <script>
         const cars = [ "BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi" ];
